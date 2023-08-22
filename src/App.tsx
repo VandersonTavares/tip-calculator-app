@@ -73,7 +73,7 @@ function App() {
               <div className="left sm:w-[50%] flex flex-col gap-2">
                 <div className="bill flex flex-col">
                   <span className="text-xs font-bold text-[#647275]">Bill</span>
-                  <div className="relative w-full">
+                  <div className="relative">
                     <img
                       src={dollar}
                       alt=""
