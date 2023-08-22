@@ -1,5 +1,6 @@
 import logo from "./assets/images/logo.svg";
 import dollar from "./assets/images/icon-dollar.svg";
+import person from "./assets/images/icon-person.svg";
 
 import "./App.css";
 import { useState, useEffect } from "react";
@@ -72,18 +73,20 @@ function App() {
               <div className="left sm:w-[50%] flex flex-col gap-2">
                 <div className="bill flex flex-col">
                   <span className="text-xs font-bold text-[#647275]">Bill</span>
-                  <img
-                    src={dollar}
-                    alt=""
-                    className="absolute left-2 top-6 transform -translate-y-1/2 w-2"
-                  />
-                  <input
-                    type="text"
-                    placeholder="0"
-                    onChange={handleBill}
-                    value={bill}
-                    className="mt-2 text-right rounded h-8 pr-2 text-[#0a3838] font-bold bg-[#f3f8fb] placeholder:text-[#a8bcbd] focus:border-[#9fe8df] border-2 border-transparent focus:outline-none"
-                  />
+                  <div className="relative w-full">
+                    <img
+                      src={dollar}
+                      alt=""
+                      className="absolute left-2 top-6 transform -translate-y-1/2 w-2"
+                    />
+                    <input
+                      type="text"
+                      placeholder="0"
+                      onChange={handleBill}
+                      value={bill}
+                      className="w-full mt-2 text-right rounded h-8 pr-2 text-[#0a3838] font-bold bg-[#f3f8fb] placeholder:text-[#a8bcbd] focus:border-[#9fe8df] border-2 border-transparent focus:outline-none"
+                    />
+                  </div>
                 </div>
                 <div className="tip-buttons">
                   <span className="text-xs font-bold text-[#647275]">
@@ -156,18 +159,20 @@ function App() {
                   <span className="text-xs font-bold text-[#647275] mt-1">
                     Number of People
                   </span>
-                  <img
-                    src={dollar}
-                    alt=""
-                    className="absolute left-2 top-6 transform -translate-y-1/2 w-2"
-                  />
-                  <input
-                    type="text"
-                    placeholder="0"
-                    onChange={handlePeople}
-                    value={people}
-                    className="pl-8 mt-2 text-right rounded h-8 pr-2 text-[#0a3838] font-bold bg-[#f3f8fb] placeholder:text-[#a8bcbd] focus:border-[#9fe8df] border-2 border-transparent focus:outline-none"
-                  />
+                  <div className="relative">
+                    <img
+                      src={person}
+                      alt=""
+                      className="absolute left-2 top-6 transform -translate-y-1/2 w-2"
+                    />
+                    <input
+                      type="text"
+                      placeholder="0"
+                      onChange={handlePeople}
+                      value={people}
+                      className="w-full pl-8 mt-2 text-right rounded h-8 pr-2 text-[#0a3838] font-bold bg-[#f3f8fb] placeholder:text-[#a8bcbd] focus:border-[#9fe8df] border-2 border-transparent focus:outline-none"
+                    />
+                  </div>
                 </div>
               </div>
               <div className="right mt-5 flex flex-col justify-between sm:w-[50%] bg-[#00474b] rounded-xl">
